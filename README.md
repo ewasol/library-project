@@ -36,7 +36,7 @@ This project is a RESTful API for managing a library's book inventory. Implement
    cd library-project
    ```
    
-2**Create a .env File**
+2. **Create a .env File**
 
    ```
    cp .env.example .env
@@ -52,13 +52,13 @@ SQLALCHEMY_DATABASE_URI=...
 SECRET_KEY=...
  ```
 
-3**Build and Run the Containers**
+3. **Build and Run the Containers**
 
  ```
 docker-compose up --build
  ```
 
-4**Initialize the Database**
+4. **Initialize the Database**
 
 Run the following command to create the necessary database tables:
 
@@ -68,10 +68,10 @@ docker-compose exec web flask db upgrade
 
 ## API Endpoints
 
-1**Add a New Book**
-Endpoint: /books
-Method: POST
-Request Body:
+1. **Add a New Book**
+* Endpoint: /books
+* Method: POST
+* Request Body:
 ```
 {
   "serial_number": "111111",
@@ -80,19 +80,19 @@ Request Body:
 }
 ```
 
-2**Get All Books**
-Endpoint: /books
-Method: GET
+2. **Get All Books**
+* Endpoint: /books
+* Method: GET
 
-3**Delete a Book**
-Endpoint: /books/<serial_number>
-Method: DELETE
+3. **Delete a Book**
+* Endpoint: /books/<serial_number>
+* Method: DELETE
 
-4**Update Book Availability**
-Endpoint: /books/<serial_number>
-Method: PUT
-Request Body:
-}
+4. **Update Book Availability**
+* Endpoint: /books/<serial_number>
+* Method: PUT
+* Request Body:
+
 ```
 {
   "serial_number": "111111",
